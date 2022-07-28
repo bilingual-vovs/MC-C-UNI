@@ -3,6 +3,7 @@ select = require("./modules/select")
 digUntilClean = require("./modules/digUntilClean")
 
 clearSquere = require("./modules/clearSquere")
+buildFloor = require("./modules/buildFloor")
 
 
 function placeLadder()
@@ -88,7 +89,7 @@ turtle.turnRight()
 
 clearSquere(x, y, z)
 
-
+buildFloor(x, y, "minecraft:cobblestone")
 
 -- Return
 
