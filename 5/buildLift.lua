@@ -111,7 +111,14 @@ turtle.turnLeft()
 
 for i = 1, height do
     if select("minecraft:cobblestone") then
-        turtle.place()
+        if(walls == "y" or walls == "yes") and (i > tonumber(z))then
+            for c = 1, 4 do
+                turtle.turnLeft()
+                turtle.place()
+            end
+        else
+            turtle.place()
+        end
     end
     select("minecraft:ladder")
     turtle.up()
