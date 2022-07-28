@@ -1,14 +1,10 @@
 totalCount = require("./modules/totalCount")
 select = require("./modules/select")
 digUntilClean = require("./modules/digUntilClean")
+fd = require("./modules/protectedFd")
 
 clearSquere = require("./modules/clearSquere")
 buildFloor = require("./modules/buildFloor")
-
-
-function placeLadder()
-    
-end
 
 
 print("Enter lift height ...")
@@ -59,6 +55,14 @@ if stRoom == "n" or stRoom == "no" then
 else 
     x, y, z = 6, 6, 3
 end
+
+neededFuel = height*2 + x*y*z
+fuelLevel = turtle.getFuelLevel()
+if(fuelLevel<neededFuel)then
+    print("Not enought fuel: " .. neededFuel .. " is requested, but fuel level is " .. fuelLevel)
+else
+
+-- End of data request
 
 for i = 1, height do
     turtle.digDown()
@@ -130,3 +134,4 @@ turtle.forward()
 turtle.turnLeft()
 turtle.turnLeft()
 print("Finished")
+end
