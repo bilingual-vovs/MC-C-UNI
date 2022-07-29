@@ -25,7 +25,7 @@ while requiredStairs > totalCount("minecraft:ladder") do
     os.queueEvent("randomEvent")
     os.pullEvent()
     newCount = totalCount("minecraft:ladder")
-    if oldCount ~= newCount then
+    if oldCount ~= newCount then    
         if(requiredStairs>newCount) then
             print("Required amount of ladders: " .. requiredStairs .."\n is in UNI: " .. newCount .. '\n add ' .. requiredStairs - newCount .. " more ladders")
         end

@@ -77,4 +77,6 @@ function clearSquere(x, y, z)
     end
 end
 
+clearSquere(5, 5, 5)
+
 return clearSquere
