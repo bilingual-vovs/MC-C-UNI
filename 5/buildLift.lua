@@ -76,14 +76,14 @@ turtle.turnLeft()
 
 for i = 1, math.floor(x/2) do
     digUntilClean()
-    turtle.forward()
+    fd()
 end
 
 turtle.turnRight()
 
 for i = 1, math.floor(y/2) do
     digUntilClean()
-    turtle.forward()
+    fd()
 end
 
 turtle.turnRight()
@@ -99,14 +99,14 @@ buildFloor(x, y, "minecraft:cobblestone")
 
 for i = 1, math.floor(x/2) do
     digUntilClean()
-    turtle.forward()
+    fd()
 end
 
 turtle.turnRight()
 
 for i = 1, math.floor(y/2) do
     digUntilClean()
-    turtle.forward()
+    fd()
 end
 
 turtle.turnLeft()
@@ -130,7 +130,7 @@ for i = 1, height do
 
 end
 
-turtle.forward()
+fd()
 turtle.turnLeft()
 turtle.turnLeft()
 print("Finished")
