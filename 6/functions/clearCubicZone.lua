@@ -75,7 +75,6 @@
                         end
                     end
                 else
-                    print(layersToClean)
                     clearLayer(true, false)
                     layersToClean = layersToClean - 2
                 end

@@ -1,5 +1,7 @@
 clearCubicZone = require("/functions/clearCubicZone")
 
+ask, askBool, askForMaterial = require("/packets/ask")
+
 function buildLift(height, room, buildWalls, buildRoomWals, materials)
     -- Fuel calculating
 
@@ -15,3 +17,6 @@ function buildLift(height, room, buildWalls, buildRoomWals, materials)
         turtle.forward()
     end
 end
+
+ask()
+askBool()

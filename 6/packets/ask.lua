@@ -1,5 +1,5 @@
 return {
     ask = require("/modules/ask"),
-    askBool = require("/modules/askForMaterial"),
+    askBool = require("/modules/askBool"),
     askForMaterial = require("/modules/askForMaterial")
 }

@@ -1,5 +1,6 @@
 totalCount = require("/modules/totalCount")
-ask = "/modules/ask.lua"
+ask = require("/modules/ask") 
+
 
 function askForMaterial(material, count, text)
     if material == "ss" and turtle.getItemDetail() then
