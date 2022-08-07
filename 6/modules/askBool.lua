@@ -6,6 +6,12 @@ function askBool(question)
         print("Incorreact answear, answear could be only: 'y', 'n', 'yes' and 'no'")
         ans = string.lower(io.read())
     end
+
+    if ans == "y" or ans == "yes" then
+        ans = true
+    else
+        ans = false
+    end
     return ans
 end
 

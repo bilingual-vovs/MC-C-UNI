@@ -24,11 +24,11 @@ if (x+y-2)*4*math.ceil(z/3)+z*2+((x-2)*(y-2)-1)*math.ceil((z-2)/3)+z-3 + 10 + z 
     error("Not enought fuel: fuel level is " .. turtle.getFuelLevel() .. ",but " .. (x-1)*2*math.ceil(y/3)+y*2 .. " is required, add " .. (x-1)*2*math.ceil(y/3)+y*2 - turtle.getFuelLevel() .. " more!!")
 end
 
-roomMaterial = askP.askForMaterialFull("Enter a name of material fo room walls ...", (x+y*2*z))
+roomMaterial = askP.askForMaterialFull("Enter a name of material for room walls ...", (x+y*2*z))
 
-floorMaterial = askP.askForMaterialFull("Enter a name of material fo room floor ...", (x-2)*(y-2))
+floorMaterial = askP.askForMaterialFull("Enter a name of material for room floor ...", (x-2)*(y-2))
 
-ceilMaterial = askP.askForMaterialFull("Enter a name of material fo room ceil ...", (x-2)*(y-2))
+ceilMaterial = askP.askForMaterialFull("Enter a name of material for room ceil ...", (x-2)*(y-2))
 
 buildRectBox(x, y, z, roomMaterial, floorMaterial, ceilMaterial)
 
