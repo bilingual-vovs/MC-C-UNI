@@ -26,6 +26,7 @@ function buildRectRoom(x, y, z, material)
         end
         
         turtle.back()
+        select(material)
         turtle.place()
     end
 
@@ -81,7 +82,7 @@ function buildRectRoom(x, y, z, material)
         up()
         buildLayer(true, true)
         layers = layers - 3
-        turtle.down()
+        up()
     else
     
         while layers > 0 do

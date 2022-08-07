@@ -3,12 +3,7 @@ ask = require("/modules/ask")
 
 
 function askForMaterial(material, count, text)
-    if material == "ss" and turtle.getItemDetail() then
-        data = turtle.getItemDetail()
-        material = data.name
-    elseif not turtle.getItemDetail() then
-        material = ask("Selected slot is empty, enter a name of material ...")
-    end
+    
 
     if not  string.find(material, "minecraft:") then
         material = "minecraft:" .. material

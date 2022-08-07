@@ -1,4 +1,8 @@
 function select(item)
+    if not  string.find(item, "minecraft:") then
+        item = "minecraft:" .. item
+    end
+
     for i = 1, 16 do
         data = turtle.getItemDetail(i)
         if not (data == nil) then

@@ -29,7 +29,14 @@ end
 
 material = askP.ask("Enter a name of material ...")
 
-askP.askForMaterial(material, x*y)
+if material == "ss" and turtle.getItemDetail() then
+    data = turtle.getItemDetail()
+    material = data.name
+elseif not turtle.getItemDetail() then
+    material = ask("Selected slot is empty, enter a name of material ...")
+end
+
+askP.askForMaterial(material, (x+y-2)*2*z)
 
 returning = askP.askBool("Return to start position after finishing?")
 
